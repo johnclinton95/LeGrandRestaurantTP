@@ -19,6 +19,7 @@ public class Commande {
 	public Commande(double prix, String nom) {
 		super();
 		this.prix = prix;
+		
 		this.nom = nom;
 	}
  
