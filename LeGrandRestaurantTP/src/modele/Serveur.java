@@ -3,7 +3,7 @@ package modele;
 
 public class Serveur {
 
-	public double ChiffreAffaire;
+	public double ChiffreAffaire=0;
 
 	public double getChiffreAffaire() {
 		return ChiffreAffaire;
