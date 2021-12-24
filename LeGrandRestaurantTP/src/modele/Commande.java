@@ -19,7 +19,7 @@ public class Commande {
 	public Commande(double prix, String nom) {
 		super();
 		this.prix = prix;
-		System.out.println("hi");
+		System.out.println("hi john");
 		this.nom = nom;
 	}
 
