@@ -2,12 +2,13 @@ package modele;
 
 public class Client {
 	private double note;
-	private double numeroTable;
-	public double getNumeroTable() {
+	private int numeroTable;
+	
+	public int getNumeroTable() {
 		return numeroTable;
 	}
 
-	public void setNumeroTable(double numeroTable) {
+	public void setNumeroTable(int numeroTable) {
 		this.numeroTable = numeroTable;
 	}
 
