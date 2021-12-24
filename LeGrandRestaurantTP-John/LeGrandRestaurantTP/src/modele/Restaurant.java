@@ -14,6 +14,7 @@ public class Restaurant {
 		double res=0;
 		for(Serveur s: serveurs)
 			res=+ s.ChiffreAffaire;
+			system.out.println("hello john");
 		return res;
 	}
 }
