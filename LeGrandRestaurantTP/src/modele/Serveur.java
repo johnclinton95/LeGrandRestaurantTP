@@ -5,19 +5,29 @@ public class Serveur {
 
 	public double ChiffreAffaire=0;
 
-	public double getChiffreAffaire() {
-		return ChiffreAffaire;
+
+	private String nom;
+	double salaire;
+
+	public String getNom() {
+		return nom;
 	}
 
-	public void setChiffreAffaire(double chiffreAffaire) {
-		ChiffreAffaire = chiffreAffaire;
+	public void setNom(String nom) {
+		this.nom = nom;
 	}
 
-	public void PrendreCommande(double montantCommande) {
-		this.ChiffreAffaire += montantCommande;
+	public double getSalaire() {
+		return salaire;
+	}
+
+
+	public void setSalaire(double salaire) {
+		this.salaire = salaire;
 	}
 
 	public Serveur(String nom, double salaire) {
-
+		this.nom= nom;
+		this.salaire= salaire;
 	}
 }

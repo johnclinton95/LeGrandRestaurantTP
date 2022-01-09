@@ -8,6 +8,13 @@ public class Client {
 	}
 
 	public void setNumeroTable(double numeroTable) {
+	private int numeroTable;
+	
+	public int getNumeroTable() {
+		return numeroTable;
+	}
+
+	public void setNumeroTable(int numeroTable) {
 		this.numeroTable = numeroTable;
 	}
 
