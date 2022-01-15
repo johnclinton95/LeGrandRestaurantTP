@@ -6,21 +6,21 @@ public class Restaurant {
 
 	private ArrayList<Serveur> serveurs;
 	private  double chiffreAffaire;
-	private ArrayList<Integer> ListeTable;
+	private ArrayList<Table> ListeTable;
 	public double getChiffreAffaire() {
 		return chiffreAffaire;
 	}
 
-	public Integer remove(int index) {
-		return ListeTable.remove(index);
+	public void remove(Table table) {
+		 ListeTable.remove(table);
 	}
-	public boolean add(int index) {
-		return ListeTable.add(index);
+	public void add(Table table) {
+		 ListeTable.add(table);
 	}
-	public Integer TableOcc(int index) {
+	public Integer TableOcc() {
 		return ListeTable.size();
 	}
-	public Restaurant(ArrayList<Serveur> serveurs, double chiffreAffaire, ArrayList<Integer> listeTable) {
+	public Restaurant(ArrayList<Serveur> serveurs, double chiffreAffaire, ArrayList<Table> listeTable) {
 		super();
 		this.serveurs = serveurs;
 		this.chiffreAffaire = chiffreAffaire;
@@ -31,8 +31,16 @@ public class Restaurant {
 		this.chiffreAffaire = chiffreAffaire;
 	}
 
-	public Restaurant(ArrayList<Serveur> serveurs) {
+	public Restaurant(ArrayList<Serveur> serveurs, ArrayList<Table>tables) {
 		this.serveurs=serveurs;
+		this.ListeTable=tables;
+	}
+	
+	public double chiffreDaffaire(ArrayList<Serveur>serveurs) {
+		double chiffre=0;
+		for(Serveur serveur: serveurs)
+			chiffre=+ serveur.chiffreVente;
+		return chiffre;
 	}
 
 	

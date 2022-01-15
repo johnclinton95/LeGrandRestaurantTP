@@ -2,18 +2,13 @@ package modele;
 
 public class Client {
 	private double note;
-	private int numeroTable;
-	
-	public int getNumeroTable() {
-		return numeroTable;
-	}
+	private Table table;
+	private String nom;
 
-	public void setNumeroTable(int numeroTable) {
-		this.numeroTable = numeroTable;
-	}
-
-	public Client() {
-
+	public Client(String nom, Table table, double note) {
+		this.nom = nom;
+		this.table = table;
+		this.note = note;
 	}
 
 	public double getNote() {
@@ -26,5 +21,8 @@ public class Client {
 
 	public boolean regleFacture() {
 		return true;
+	}
+	public Table getTable() {
+		return this.table;
 	}
 }

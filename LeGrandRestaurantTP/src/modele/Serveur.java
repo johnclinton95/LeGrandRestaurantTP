@@ -5,8 +5,8 @@ public class Serveur {
 
 
 	private String nom;
-	double salaire;
-
+	double chiffreVente;
+    
 	public String getNom() {
 		return nom;
 	}
@@ -15,17 +15,16 @@ public class Serveur {
 		this.nom = nom;
 	}
 
-	public double getSalaire() {
-		return salaire;
+	public double getVente() {
+		return chiffreVente;
 	}
 
-
-	public void setSalaire(double salaire) {
-		this.salaire = salaire;
+	public void setVente(Commande commande) {
+		this.chiffreVente += commande.getPrix();
 	}
 
-	public Serveur(String nom, double salaire) {
+	public Serveur(String nom, double chiffreVente) {
 		this.nom= nom;
-		this.salaire= salaire;
+		this.chiffreVente= chiffreVente;
 	}
 }
