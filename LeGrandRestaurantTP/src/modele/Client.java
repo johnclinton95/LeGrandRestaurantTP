@@ -14,7 +14,9 @@ public class Client {
 	public double getNote() {
 		return note;
 	}
-
+	public void setTable(Table table) {
+		this.table = table;
+	}
 	public void setNote(double note) {
 		this.note = note;
 	}

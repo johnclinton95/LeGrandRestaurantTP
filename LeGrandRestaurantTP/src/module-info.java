@@ -1,3 +1,0 @@
-module LeGrandRestaurantTP {
-	requires junit;
-}

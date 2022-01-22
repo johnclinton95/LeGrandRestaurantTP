@@ -2,7 +2,7 @@ package modele;
 
 import java.util.ArrayList;
 
-public class Restaurant {
+public abstract class Restaurant {
 
 	private ArrayList<Serveur> serveurs;
 	private  double chiffreAffaire;
@@ -21,7 +21,7 @@ public class Restaurant {
 		return ListeTable.size();
 	}
 	public Restaurant(ArrayList<Serveur> serveurs, double chiffreAffaire, ArrayList<Table> listeTable) {
-		super();
+		
 		this.serveurs = serveurs;
 		this.chiffreAffaire = chiffreAffaire;
 		ListeTable = listeTable;
@@ -31,11 +31,6 @@ public class Restaurant {
 		this.chiffreAffaire = chiffreAffaire;
 	}
 
-	public Restaurant(ArrayList<Serveur> serveurs, ArrayList<Table>tables) {
-		this.serveurs=serveurs;
-		this.ListeTable=tables;
-	}
-	
 	public double chiffreDaffaire(ArrayList<Serveur>serveurs) {
 		double chiffre=0;
 		for(Serveur serveur: serveurs)
